@@ -1269,6 +1269,36 @@ section,
   color: var(--contrast-color);
 }
 
+.portfolio .techstack-tag {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.portfolio .techstack-tag li {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 4px 10px;
+  cursor: pointer;
+  border-radius: 30px;
+  /* background-color: color-mix(in srgb, var(--surface-color), transparent 50%); */
+  border-width: 1.5px;
+  border-color: rgb(43, 43, 46);
+  border-style: solid;
+  color: var(--default-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .techstack-tag li:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  color: var(--accent-color);
+  transform: translateY(-2px);
+}
+
 .portfolio .portfolio-card {
   background-color: #000;
   border-width: 2px;
@@ -1364,7 +1394,7 @@ section,
 
 .portfolio .portfolio-card .portfolio-content h3 {
   font-size: 20px;
-  margin: 0 0 15px;
+  margin: 0 0 18px;
   font-weight: 600;
   transition: color 0.3s ease;
 }
