@@ -1600,7 +1600,7 @@ section,
 
 .services .service-item h3 {
   font-size: 1.25rem;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .services .service-item h3 a {
@@ -1614,6 +1614,40 @@ section,
 .services .service-item p {
   font-size: 0.9rem;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.services .service-item .skill-details {
+  display: flex;
+}
+
+.services .service-item .skill-details .skill-name {
+  align-content: start;
+}
+
+.services .service-item .skill-details .skill-percentage {
+  align-content: end;
+}
+
+.services .service-item span {
+  margin-top: 20px;
+  color: color-mix(in srgb, var(--default-color), transparent 25%);
+}
+
+.services .service-item .progress {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 85%);
+  border-radius: 50px;
+  height: 8px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.services .service-item .progress-bar {
+  background-color: var(--accent-color);
+  height: 100%;
+  position: relative;
+  border-radius: 50px;
+  transition: 0.9s;
+  width: 1px;
 }
 
 @media (max-width: 991px) {
