@@ -483,6 +483,10 @@ h6 {
   .mobile-nav-active .navmenu > ul {
     display: block;
   }
+
+  body.mobile-nav-active .navmenu > ul {
+    display: block !important;
+  }
 }
 
 /*--------------------------------------------------------------
